@@ -14,4 +14,13 @@ Examples:
     34 is not factored by 3, 5, or 7, so the result would be "34".
 """
 def convert(number):
-    pass
+    res = ''
+    if number % 3 == 0:
+        res += 'Pling'
+    if number % 5 == 0:
+        res += 'Plang'
+    if number % 7 == 0:
+        res += 'Plong'
+    if res == '':
+        res = str(number)
+    return res
